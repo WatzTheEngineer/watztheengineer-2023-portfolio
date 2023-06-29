@@ -196,7 +196,7 @@ export default class Preloader extends EventEmitter {
                 .to(this.roomChildren.desk, {
                     visible: true,
                 }, "appearing")
-                .to(this.roomChildren.holoscreen, {
+                .to(this.roomChildren.screen, {
                     visible: true,
                 }, "appearing")
 

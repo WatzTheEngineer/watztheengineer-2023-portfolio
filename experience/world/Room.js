@@ -36,7 +36,7 @@ export default class Room {
             }
 
             if (child.name === "MainMesh") {
-                var sel = child.children[2];
+                let sel = child.children[2];
                 sel.material = new THREE.MeshPhysicalMaterial();
                 sel.material.roughness = 0;
                 sel.material.color.set(0xDAF0FF);
@@ -44,17 +44,14 @@ export default class Room {
                 sel.material.transmission = 1;
                 sel.material.opacity = 1;
                 sel.castShadow = false;
-            } else if (child.name === "HoloScreen") {
-                child.material.map = new THREE.TextureLoader().load('/textures/holoscreenBLUE.png');
-                child.material.map.flipY = false;
+            } else if (child.name === "Screen") {
                 child.material.transparent = true;
-                child.material.opacity = .8;
+                child.material.opacity = .5;
                 child.castShadow = false;
-                child.material.emissive = new THREE.Color(0.05, 0.1, 1);
             }
 
 
-            if (child.name === "Stack" || child.name === "Desk" || child.name === "HoloScreen") {
+            if (child.name === "Stack" || child.name === "Desk" || child.name === "Screen") {
                 child.visible = false;
             } else if (child.name !== "Rocks") {
                 child.position.y += 40;
