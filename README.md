@@ -1,8 +1,6 @@
 # WatzTheEngineer's 2023 personnal Portfolio
 
-**[Live version](https://watztheengineer-2023-portfolio.vercel.app/)**
-
-This repo contains my 2023 personal portfolio. It is inspired by 
+This repo contains my 2023 personal portfolio, which was done as a school project. It is inspired by 
 **[Bokoko33's award-winning website](https://bokoko33.me/)**. 
 Thanks to [Andrew Woam](https://www.youtube.com/@andrewwoan) 
 for providing [this repository](https://github.com/andrewwoan/abigail-bloom-portolio-bokoko33). General theme 
